@@ -1,48 +1,19 @@
 <svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Climate Dashboard">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#01121a"/>
-      <stop offset="55%" stop-color="#03293d"/>
-      <stop offset="100%" stop-color="#064560"/>
-    </linearGradient>
-
-    <pattern id="mot" width="180" height="70" patternUnits="userSpaceOnUse">
-      <g fill="none" stroke="#2de3c0" stroke-width="1.1" opacity="0.24">
-        <path d="M0 18 Q45 2 90 18 T180 18"/>
-        <path d="M0 38 Q45 22 90 38 T180 38"/>
-      </g>
-      <path d="M0 58 Q45 42 90 58 T180 58" fill="none" stroke="#6bd6ff"
-            stroke-width="1.1" opacity="0.20"/>
-    </pattern>
-    <linearGradient id="scan" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#6bd6ff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#6bd6ff" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#6bd6ff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#01121a"/><stop offset="100%" stop-color="#04364e"/>
     </linearGradient>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="4" result="g"/>
+      <feGaussianBlur stdDeviation="3.6" result="g"/>
       <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-
   <rect width="900" height="200" fill="url(#bg)"/>
-  <rect width="900" height="200" fill="url(#mot)"/>
-  <rect width="900" height="34" fill="url(#scan)" opacity="0.5"/>
-
-  <g fill="none" stroke="#6bd6ff" stroke-width="2.4" opacity="0.85">
-    <path d="M22 52 V22 H52"/><path d="M848 22 H878 V52"/>
-    <path d="M22 148 V178 H52"/><path d="M848 178 H878 V148"/>
-  </g>
-
-  <text x="60" y="70" font-family="Consolas, 'Courier New', monospace" font-size="14"
-        fill="#2de3c0" opacity="0.78" letter-spacing="2.5">&gt; dashboard --render charts</text>
-
-  <text x="60" y="128" font-family="Consolas, 'Courier New', monospace"
-        font-size="46" font-weight="bold" fill="#2de3c0" filter="url(#glow)"
-        letter-spacing="2">Climate Dashboard</text>
-
-  <text x="62" y="160" font-family="Consolas, 'Courier New', monospace"
-        font-size="15" fill="#6bd6ff" opacity="0.92" letter-spacing="1.2">Interactive dashboard over exported climate data</text>
-
-  <rect x="60" y="172" width="150" height="2.5" fill="#2de3c0" opacity="0.85"/>
+  <path d="M0 40 Q225 18 450 36 T900 30" fill="none" stroke="#6bd6ff" stroke-width="1.1" opacity="0.28"/><path d="M0 54 Q225 32 450 50 T900 44" fill="none" stroke="#6bd6ff" stroke-width="1.1" opacity="0.28"/><path d="M0 68 Q225 46 450 64 T900 58" fill="none" stroke="#6bd6ff" stroke-width="1.1" opacity="0.28"/><path d="M0 82 Q225 60 450 78 T900 72" fill="none" stroke="#6bd6ff" stroke-width="1.1" opacity="0.28"/>
+  <path d="M0 96 Q150 70 300 90 T600 84 T900 94 V200 H0 Z" fill="#0a4a63" opacity="0.3"/><path d="M0 113 Q150 87 300 107 T600 101 T900 111 V200 H0 Z" fill="#0a4a63" opacity="0.255"/><path d="M0 130 Q150 104 300 124 T600 118 T900 128 V200 H0 Z" fill="#0a4a63" opacity="0.21"/><path d="M0 147 Q150 121 300 141 T600 135 T900 145 V200 H0 Z" fill="#0a4a63" opacity="0.16499999999999998"/><path d="M0 164 Q150 138 300 158 T600 152 T900 162 V200 H0 Z" fill="#0a4a63" opacity="0.12"/>
+  <circle cx="778" cy="52" r="26" fill="#2de3c0" opacity="0.16"/>
+  <circle cx="778" cy="52" r="15" fill="#2de3c0" opacity="0.30"/>
+  <text x="40" y="96" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="normal" fill="#2de3c0" opacity="0.85" text-anchor="start" letter-spacing="2">&gt; dashboard --render charts</text>
+  <text x="40" y="142" font-family="Consolas, 'Courier New', monospace" font-size="40" font-weight="bold" fill="#2de3c0" opacity="1.0" text-anchor="start" letter-spacing="1.5" filter="url(#glow)">Climate Dashboard</text>
+  <text x="42" y="168" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="normal" fill="#6bd6ff" opacity="0.95" text-anchor="start" letter-spacing="1.0">Interactive dashboard over exported climate data</text>
 </svg>
